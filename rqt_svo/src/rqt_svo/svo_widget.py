@@ -4,7 +4,8 @@ import rospy
 import rospkg
 import numpy as np
 from python_qt_binding import loadUi
-from python_qt_binding.QtGui import QWidget
+#from python_qt_binding.QtGui import QWidget  # <= old line commented out
+from python_qt_binding.QtWidgets import QWidget  # <= new line added
 from python_qt_binding.QtCore import QTimer, Slot
 from svo_msgs.msg import Info
 from std_msgs.msg import String
